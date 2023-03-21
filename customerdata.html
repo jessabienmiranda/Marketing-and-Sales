@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Data</title>
+    <link rel = "stylesheet" href="Styles.css">
+  <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+          height: 185vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .container{
+          display: flex;
+          flex-direction: column;
+          width: 1000px;
+          padding: 15px;
+          border: 1px solid 
+          skyblue;
+          border-radius: 5px;
+      }
+      input{
+          margin: 10px 0px;
+          height: 25px;
+          padding: 7px;
+      }
+      button{
+          height: 35px;
+          margin: 5px 0px;
+          background-color:
+          skyblue;
+          border: none;
+          border-radius: 2px;
+          color: #333;
+      }
+      button:hover{
+        background-color: #333;
+        color: skyblue;
+      }     
+      fieldset{          
+          display: flex;
+          flex-direction: column;
+          width: 970px;
+          padding: 20px;
+          border: 1px solid 
+          skyblue;
+          border-radius: 5px;
+      }
+  </style>
+</head>
+<body>
+  <form action="/module_page.php" method="get">
+    <h2>Customer Data</h2><br>
+    <div class="container"> 
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="fname">First name:</label> <input type="text" id="fname" name="fname" placeholder="First name">
+        <label for="mname">Middle name:</label> <input type="text" id="mname" name="mname" placeholder="Middle name">
+        <label for="lname">Last name:</label> <input type="text" id="lname" name="lname" placeholder="Last name">
+        <label for="age">Age:</label> 
+        <input type="text" id="age" name="age" placeholder="age">
+        <label for="gender">Gender:</label> 
+        <input type="text" id="gender" name="gender" placeholder="gender">
+        <label for="birthdate">Birthdate:</label> 
+        <input type="text" id="birthdate" name="birthdate" placeholder="birthdate">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Contact Information:</legend>
+        <label for="cpno">Cellphone Number:</label> 
+        <input type="text" id="cpno" name="cpno" placeholder="Cellphone Number">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Email">     
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Company Information:</legend>
+        <label for="cpname">Company name:</label> 
+        <input type="text" id="cpname" name="cpname" placeholder="Company name">
+        <br>
+        <label for="entrytype">Select Entry Type:</label>
+        <select id="entrytype" name="entrytype" size="2">
+        <option value="Company">Company</option>
+        <option value="Individual">Individual</option>
+        </select>
+        <br>
+        <label for="companytype">Select Company Type:</label>
+        <select id="company" name="company" size="2">
+        <option value="Manufacturer">Manufacturer</option>
+        <option value="Sources">Sources</option>
+        </select>
+      </fieldset>
+      <button>Submit</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Data</title>
+    <link rel = "stylesheet" href="Styles.css">
+
+
+  <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+          height: 350vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .container{
+          display: flex;
+          flex-direction: column;
+          width: 1000px;
+          padding: 15px;
+          border: 1px solid 
+          skyblue;
+          border-radius: 5px;
+      }
+      input{
+          margin: 5px 0px;
+          height: 35px;
+          padding: 7px;
+      }     
+      fieldset{          
+          display: flex;
+          flex-direction: column;
+          width: 970px;
+          padding: 20px;
+          border: 1px solid 
+          skyblue;
+          border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+  <form action="/module_page.php" method="blank">
+    <h2>Order Data</h2><br>
+    <div class="container"> 
+      <fieldset>
+        <legend>Product name: Champeré </legend>
+        <label for="goods">Type of Alcohol:</label>
+        <select id="goods" name="goods" size="2">
+        <option value="Wine">Wine</option>
+        <option value="Champagne">Champagne</option>
+        </select>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Prices and Quantity: </legend>
+        <label for="price">Prices of Wine per bottle:</label>
+        <select id="price" name="price" size="8">
+        <option value="Alsace">Alsace - Php 500 per bottle </option>
+        <option value="Bordeaux">Bordeaux - Php 550 per bottle </option>
+        <option value="Beaujolais">Beaujolais - Php 600 per bottle </option>
+        <option value="Chamere">Chamere - Php 650 per bottle </option>
+        <option value="Châteauneuf-du-Pape">Châteauneuf-du-Pape - Php 700 per bottle </option>
+        <option value="Côtes du Rhône">Côtes du Rhône - Php 750 per bottle </option>
+        <option value="Loire Valley">Loire Valley - Php 800 per bottle </option>
+        <option value="Sancerre">Sancerre - Php 850 per bottle </option>
+        </select>
+        <br>
+        <label for="price">Prices of Champagne per bottle:</label>
+        <select id="price" name="price" size="8">
+        <option value="Bollinger Special Cuvée">Bollinger Special Cuvée - Php 500 per bottle </option>
+        <option value="Dom Pérignon">Dom Pérignon - Php 550 per bottle </option>
+        <option value="Krug Grande Cuvée">Krug Grande Cuvée - Php 600 per bottle </option>
+        <option value="Laurent-Perrier Cuvée Rosé">Laurent-Perrier Cuvée Rosé - Php 650 per bottle </option>
+        <option value="Moët & Chandon Brut Impéria">Moët & Chandon Brut Impéria - Php 700 per bottle </option>
+        <option value="Perrier-Jouët Belle Epoque">Perrier-Jouët Belle Epoque - Php 750 per bottle </option>
+        <option value="Ruinart Blanc de Blancs">Ruinart Blanc de Blancs - Php 800 per bottle </option>
+        <option value="Veuve Clicquot Yellow Label">Veuve Clicquot Yellow Label - Php 850 per bottle </option>
+        </select>
+        <br>
+        <label for="price">Prices of Wine per shot:</label>
+        <select id="price" name="price" size="8">
+        <option value="Alsace">Alsace - Php 200 per shot </option>
+        <option value="Bordeaux">Bordeaux - Php 200 per shot </option>
+        <option value="Beaujolais">Beaujolais - Php 250 per shot </option>
+        <option value="Chamere">Chamere - Php 250 per shot </option>
+        <option value="Châteauneuf-du-Pape">Châteauneuf-du-Pape - Php 300 per shot </option>
+        <option value="Côtes du Rhône">Côtes du Rhône - Php 300 per shot </option>
+        <option value="Loire Valley">Loire Valley - Php 350 per shot </option>
+        <option value="Sancerre">Sancerre - Php 350 per shot </option>
+        </select>
+        <br>
+        <label for="price">Prices of Champagne per shot:</label>
+        <select id="price" name="price" size="8">
+        <option value="Bollinger Special Cuvée">Bollinger Special Cuvée - Php 250 per shot </option>
+        <option value="Dom Pérignon">Dom Pérignon - Php 250 per shot </option>
+        <option value="Krug Grande Cuvée">Krug Grande Cuvée - Php 300 per shot </option>
+        <option value="Laurent-Perrier Cuvée Rosé">Laurent-Perrier Cuvée Rosé - Php 300 per shot </option>
+        <option value="Moët & Chandon Brut Impéria">Moët & Chandon Brut Impéria - Php 400 per shot </option>
+        <option value="Perrier-Jouët Belle Epoque">Perrier-Jouët Belle Epoque - Php 400 per shot </option>
+        <option value="Ruinart Blanc de Blancs">Ruinart Blanc de Blancs - Php 500 per shot </option>
+        <option value="Veuve Clicquot Yellow Label">Veuve Clicquot Yellow Label - Php 500 per shot </option>
+        </select>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Alcohol and Beverages:</legend>
+        <h3>Wine Selection</h3>
+        <label for="wine">Select Item name:</label>
+        <form action="/toplist_page.php">
+        <input list="Wine">
+        <datalist id="Wine">
+        <option value="Alsace">
+        <option value="Bordeaux">
+        <option value="Beaujolais">
+        <option value="Chamere">
+        <option value="Châteauneuf-du-Pape">
+        <option value="Côtes du Rhône">
+        <option value="Loire Valley">
+        <option value="Sancerre">
+        </datalist>
+        </form>
+        <br>
+        <h3>Champagne Selection</h3>
+        <label for="champagne">Select Item name:</label>
+        <form action="/toplist_page.php">
+        <input list="champagne">
+        <datalist id="champagne">
+        <option value="Bollinger Special Cuvée">
+        <option value="Dom Pérignon">
+        <option value="Krug Grande Cuvée">
+        <option value="Laurent-Perrier Cuvée Rosé">
+        <option value="Moët & Chandon Brut Impéria">
+        <option value="Perrier-Jouët Belle Epoque">
+        <option value="Ruinart Blanc de Blancs">
+        <option value="Veuve Clicquot Yellow Label">
+        </datalist>
+        </form>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Payment Mode: </legend>
+        <form>
+          <input type="radio" id="cash" name="mode" value="Cash">
+          <label for="cash">Cash</label><br>
+          <input type="radio" id="Cheque" name="mode" value="Cheque">
+          <label for="cheque">Cheque</label><br>
+          <input type="radio" id="e-wallet" name="mode" value="E-wallet">
+          <label for="e-wallet">E-wallet</label><br>
+          <input type="radio" id="creditcard" name="mode" value="Credit card">
+          <label for="creditcard">Credit card</label>
+          </form><br>
+          <br>
+          <label for="transaction-date">Transaction Date:</label>
+          <input type="date" id="transaction-date" name="transaction-date"><br>
+      <fieldset>
+        <legend>Remarks:</legend>
+        <label for="cpname">Company name:</label> 
+        <textarea name="message" rows="10" cols="30"></textarea>
+      </fieldset>
+      <button>Submit</button>
+    </div>
+  </form>
+</body>
+</html>
